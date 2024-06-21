@@ -20,6 +20,7 @@ sig.updateString(sigvalcap);
 
 const signatureHex = sig.sign();
 
+console.log('Signature', signatureHex);
 
 // Client
 const message = 'xoxoxoxoxoxoxoxo';

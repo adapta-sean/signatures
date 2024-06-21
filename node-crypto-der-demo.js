@@ -17,6 +17,9 @@ console.log('Public key buffer', publicKey);
 console.log(`Private key:\n${privateKey.toString('hex')}`);
 console.log(`Public key:\n${publicKey.toString('hex')}`);
 
+console.log(`Private key BAtohex:\n${jsrsasign.BAtohex(privateKey)}`);
+console.log(`Public key BAtohex:\n${jsrsasign.BAtohex(publicKey)}`);
+
 const privateKeyPem = derToPem(privateKey, 'PRIVATE KEY');
 const publicKeyPem = derToPem(publicKey, 'PUBLIC KEY');
 
