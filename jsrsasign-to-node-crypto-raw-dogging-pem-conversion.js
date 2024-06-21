@@ -38,5 +38,4 @@ const verify = crypto.createVerify('SHA256');
 verify.update(message);
 verify.end();
 
-
 console.log('Signature verified:', verify.verify(publicKeyPem, signatureHex, 'hex'));
