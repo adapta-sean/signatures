@@ -3,7 +3,7 @@ import crypto from "crypto";
 
 const hash = "sha256";
 const message = "hello";
-const curve = "secp256k1";
+const curve = "P-256";
 
 const {privateKey, publicKey} = crypto.generateKeyPairSync('ec', {
     namedCurve: curve,

@@ -5,12 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve-ecdsa-example": "http-server ./ecdsa-example-sign-verify -p 4442",
+    "serve-ecdsa-example-custom": "http-server ./ecdsa-example-sign-verify-custom-keys -p 4443",
+    "serve-verify-ecdsa-browser": "http-server ./verify-ecdsa-browser -p 4444"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "http-server": "^14.1.1",
     "jsrsasign": "^11.1.0"
   }
 }
